@@ -8,6 +8,7 @@ $spacing-mobile: $spacing * 0.666;
 .Media__thumb {
   padding-left: $spacing-mobile;
   padding-top: $spacing;
+  flex-shrink: 0;
 
   @media(min-width: $small-screen) {
     padding-left: $spacing;
