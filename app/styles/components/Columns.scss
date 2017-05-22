@@ -1,12 +1,12 @@
 .Columns {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media(min-width: $small-screen) {
     flex-wrap: nowrap;
-    flex-direction: row;
     text-align: left;
   }
 }

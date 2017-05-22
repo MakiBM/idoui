@@ -19,11 +19,10 @@
 .Footer__social {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 
   @media(min-width: $small-screen) {
-    margin-right: 0;
+    margin-left: auto;
   }
 }
 
