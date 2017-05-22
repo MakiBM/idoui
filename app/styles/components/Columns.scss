@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media(min-width: $small-screen) {
     flex-wrap: nowrap;
