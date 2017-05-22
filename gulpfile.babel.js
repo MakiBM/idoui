@@ -119,9 +119,10 @@ gulp.task('scripts', () => {
     .pipe(source('bundle.js'))
     .pipe($.plumber())
     .pipe(buffer())
+    .pipe($.uglify())
     .pipe($.sourcemaps.init({loadMaps: true}))
     .pipe($.sourcemaps.write('.'))
-    .pipe(gulp.dest('.tmp/scripts'))
+    .pipe(gulp.dest('dist/scripts'))
     .pipe(reload({stream: true}));
 });
 
