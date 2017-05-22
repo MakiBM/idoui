@@ -1,0 +1,6 @@
+[5/19/2017, 12:45:52 PM] layer "www.behemoth.pl": Unsupported extension: pl
+[5/19/2017, 12:45:52 PM] layer "loudnownet@gmail.com": Unsupported extension: com
+[5/19/2017, 12:45:52 PM] layer "walsh.png": Duplicate path: walsh.png
+[5/19/2017, 12:45:52 PM] layer "walsh.png": Duplicate path: walsh.png
+[5/19/2017, 12:45:52 PM] layer "walsh.png": Duplicate path: walsh.png
+[5/19/2017, 12:45:52 PM] layer "speckyboy.png": Duplicate path: speckyboy.png

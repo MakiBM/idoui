@@ -1,0 +1,22 @@
+.Container {
+  width: 100%;
+  max-width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.-contact {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media(min-width: $small-screen) {
+  .Container.-contact {
+    padding-top: $left-spacing * 2;
+    padding-bottom: $left-spacing * 2;
+    padding-right: $left-spacing;
+  }
+}

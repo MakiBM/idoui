@@ -1,0 +1,19 @@
+.Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  &.-fractal  { background-image: url(../images/bg.jpg); }
+  &.-mountain { background-image: url(../images/mountain.jpg); }
+  &.-dark     { background-color: $almost-black; }
+
+  &.-contact {
+    width: calc(100% + #{$left-spacing * 4});
+    left: $left-spacing * -2;
+  }
+}

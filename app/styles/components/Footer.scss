@@ -1,0 +1,36 @@
+.Footer {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-direction: column;
+  text-align: center;
+
+  @media(min-width: $small-screen) {
+    align-items: center;
+    text-align: left;
+    flex-direction: row;
+  }
+}
+
+.Footer__copy {
+  font-size: 12px;
+}
+
+.Footer__social {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media(min-width: $small-screen) {
+    margin-right: 0;
+  }
+}
+
+.Footer__social__item {
+  padding: 20px;
+
+  @media(min-width: $small-screen) {
+    padding: 10px;
+  }
+}

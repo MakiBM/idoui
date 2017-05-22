@@ -1,0 +1,35 @@
+$padding: 30px;
+$height-big: 50px;
+$height-small: 35px;
+
+.Button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: $height-big;
+  padding-left: $padding;
+  padding-right: $padding;
+  border-radius: $height-big / 2;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  color: $white;
+  background-color: $blue;
+  transition: background-color .3s;
+
+  &:hover,
+  &:active {
+    background-color: darken($blue, 10%);
+  }
+
+  &.-small {
+    height: $height-small;
+    border-radius: $height-small / 2;
+  }
+
+  &.-wide {
+    width: 100%;
+    max-width: 180px;
+  }
+}

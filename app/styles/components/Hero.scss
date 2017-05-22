@@ -1,0 +1,43 @@
+.Hero {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+}
+
+.Hero__title {
+  font-size: 22px;
+  line-height: vunits(1.3);
+  margin-top: vunits(1);
+
+  @media(min-width: $small-screen) {
+    font-size: 36px;
+    line-height: vunits(2);
+  }
+}
+
+.Hero__subtitle {
+  margin-top: vunits(1);
+  display: none;
+
+  @media(min-width: $small-screen) {
+    display: block;
+  }
+}
+
+.Hero__logotype {
+  display: inline-block;
+  max-width: 50%;
+}
+
+.Hero__icon {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}

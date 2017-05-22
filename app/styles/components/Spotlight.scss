@@ -1,0 +1,47 @@
+.Spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Spotlight__content{
+  flex-grow: 1;
+  max-width: 100%;
+
+  @media(min-width: $small-screen) {
+    max-width: 50%;
+  }
+}
+
+.Spotlight__graphic {
+  flex-grow: 1;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 50px;
+
+  @media(min-width: $small-screen) {
+    margin-top: 0;
+    max-width: 50%;
+  }
+}
+
+.Spotlight__image-wrap {
+  position: relative;
+  display: inline-block;
+
+  > img {
+    max-width: calc(100% - 30px);
+    display: inline-block;
+  }
+}
+
+.Spotlight__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(20%) translateY(-20%);
+
+  @media(min-width: $small-screen) {
+    transform: translateX(40%) translateY(-40%);
+  }
+}

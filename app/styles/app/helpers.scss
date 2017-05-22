@@ -1,0 +1,5 @@
+.h-hide-mobile {
+  @media(max-width: $small-screen) {
+    display: none !important;
+  }
+}

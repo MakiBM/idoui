@@ -1,0 +1,121 @@
+.Articles {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+}
+
+.Article {
+  flex-basis: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: $left-spacing;
+
+  @media(min-width: $small-screen) {
+    flex-basis: calc(50% - #{30px * 2});
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media(min-width: $medium-screen) {
+    flex-basis: calc(50% - #{$left-spacing * 2});
+    margin-left: $left-spacing;
+    margin-right: $left-spacing;
+  }
+}
+
+.Article__img {
+  width: 100%;
+}
+
+.Article__panel {
+  $vertical-padding: 50px;
+  $horizontal-padding: $left-spacing / 2;
+  $horizontal-margin: $horizontal-padding / 2;
+  $width: calc(100% - #{$horizontal-padding});
+
+  position: relative;
+  width: $width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $vertical-padding * -1;
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
+  background-color: $white;
+
+  @media(min-width: $small-screen) {
+    $horizontal-padding: $left-spacing;
+    $horizontal-margin: $horizontal-padding / 2;
+    $width: calc(100% - #{$horizontal-padding});
+
+    width: $width;
+    margin-left: $horizontal-margin;
+    margin-right: $horizontal-margin;
+    margin-top: $vertical-padding * -1;
+    padding-top: $vertical-padding;
+    padding-bottom: $vertical-padding;
+    padding-left: $horizontal-padding;
+    padding-right: $horizontal-padding;
+    border-bottom: 2px solid $gray;
+  }
+}
+
+.Article__meta {
+  display: flex;
+  text-transform: uppercase;
+  color: $red;
+}
+
+.Article__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: vunits(1);
+}
+
+.Article.-big {
+  flex-basis: 100%;
+  margin-top: $left-spacing;
+  margin-bottom: 100px;
+
+  .Article__panel {
+    $vertical-padding: 100px;
+    $horizontal-padding: $left-spacing * 2;
+    $horizontal-margin: $horizontal-padding / 2;
+    $width: calc(100% - #{$horizontal-padding});
+
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 50px;
+
+    @media(min-width: $small-screen) {
+      width: $width;
+      margin-left: $horizontal-margin;
+      margin-right: $horizontal-margin;
+      margin-top: $vertical-padding * -1;
+      padding: $vertical-padding $horizontal-padding;
+    }
+  }
+
+  .Article__meta {
+    margin-bottom: vunits(0.5);
+  }
+
+  .Article__link {
+    margin-left: auto;
+    color: $dark-gray;
+    text-transform: none;
+    opacity: 0.5;
+    display: none;
+
+    @media(min-width: $small-screen) {
+      display: block;
+    }
+  }
+
+  .Article__title {
+    font-size: 36px;
+  }
+}

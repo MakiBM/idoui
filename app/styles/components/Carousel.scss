@@ -1,0 +1,28 @@
+.Carousel {
+  display: flex;
+  flex-direction: column;
+  margin-top: vunits(2);
+
+  @media(min-width: $small-screen) {
+    flex-direction: row;
+  }
+}
+
+.Carousel__item {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: $dark-gray;
+
+  @media(min-width: $small-screen) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .Carousel.-light & {
+    background-color: $white;
+  }
+}

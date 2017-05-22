@@ -1,0 +1,39 @@
+$spacing: 30px;
+$spacing-mobile: $spacing * 0.666;
+
+.Media {
+  display: flex;
+}
+
+.Media__thumb {
+  padding-left: $spacing-mobile;
+  padding-top: $spacing;
+
+  @media(min-width: $small-screen) {
+    padding-left: $spacing;
+    padding-top: $spacing;
+  }
+}
+
+.Media__content {
+  padding-left: $spacing-mobile;
+  padding-right: $spacing;
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+
+  @media(min-width: $small-screen) {
+    padding-left: $spacing;
+  }
+}
+
+.Media__title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.Media__excerpt {
+  margin-top: vunits(0.5);
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.7;
+}

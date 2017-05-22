@@ -1,0 +1,8 @@
+.Link {
+  color: $red;
+  transition: color 0.2s $easing-primary;
+
+  &:hover {
+    color: darken($red, 20%);
+  }
+}

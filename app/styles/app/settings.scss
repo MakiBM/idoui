@@ -1,0 +1,32 @@
+// Neat Breakpoints
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+
+// Typography
+$base-font-family: proxima-nova;
+$heading-font-family: proxima-nova;
+
+// Colors
+$black: #000000;
+$almost-black: #0c121f;
+$dark-gray: #181e2a;
+$gray: #f7f7f7;
+$white: #ffffff;
+$yellow: #f7df1e;
+$red: #e34f26;
+$blue: #1f9eee;
+
+// Easings
+$easing-primary: cubic-bezier(0.16, 0.68, 0.43, 0.99);
+$easing-secondary: cubic-bezier(0.7, 0, 0.3, 1);
+
+// Layout
+$content-width: 1180px;
+$gutter: 20px;
+$line-height: 24px;
+$left-spacing: 60px;
+
+@function vunits($n: 1) {
+  @return $n * $line-height;
+}

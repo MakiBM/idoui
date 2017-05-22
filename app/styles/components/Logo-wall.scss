@@ -1,0 +1,62 @@
+.Logo-wall {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+  @media(min-width: $small-screen) {
+    text-align: left;
+  }
+}
+
+.Logo-wall__lead {
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+  @media(min-width: $small-screen) {
+    flex-basis: 50%;
+    padding-left: $left-spacing;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+.Logo-wall__lead__txt {
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media(min-width: $small-screen) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.Logo-wall__items {
+  flex-grow: 1;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media(min-width: $small-screen) {
+    flex-basis: 50%;
+  }
+}
+
+.Logo-wall__item {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media(min-width: $small-screen) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  > img {
+    max-width: 100%;
+  }
+}

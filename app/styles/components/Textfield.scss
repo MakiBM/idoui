@@ -1,0 +1,112 @@
+.Textfield {
+  align-items: center;
+  display: flex;
+  position: relative;
+  top: -10px;
+}
+
+.Textfield__input,
+.Textfield__textarea {
+  background-color: transparent;
+  border-bottom: 2px solid;
+  border-color: rgba($gray, 0.5);
+  border-left: 0;
+  border-radius: 0;
+  border-right: 0;
+  border-top: 0;
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.Textfield__textarea {
+  height: 72px;
+}
+
+.Textfield__label {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  transition: .2s $easing-primary all;
+}
+
+.Textfield__bar {
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+
+  &:before,
+  &:after {
+    bottom: 0;
+    content: '';
+    height: 2px;
+    position: absolute;
+    transition: .2s $easing-primary all;
+    width: 0;
+  }
+
+  &:before {
+    left: 50%;
+    background: linear-gradient(-135deg, $blue 0%, $yellow 100%);
+  }
+
+  &:after {
+    right: 50%;
+    background: linear-gradient(-135deg, $yellow 0%, $red  100%);
+  }
+}
+
+/*
+  Active state
+*/
+.Textfield__input:focus ~ .Textfield__label,
+.Textfield__input:valid ~ .Textfield__label,
+.Textfield__input.has-value ~ .Textfield__label,
+.Textfield__textarea:focus ~ .Textfield__label,
+.Textfield__textarea:valid ~ .Textfield__label {
+  opacity: 0.6;
+  font-size: 14px;
+  top: -20px;
+}
+
+.Textfield__input:focus ~ .Textfield__bar:before,
+.Textfield__input:focus ~ .Textfield__bar:after,
+.Textfield__textarea:focus ~ .Textfield__bar:before,
+.Textfield__textarea:focus ~ .Textfield__bar:after {
+  width: 50%;
+}
+
+/*
+  Error State
+ */
+
+.Textfield__input.is-error,
+.Textfield__textarea.is-error {
+  color: $red !important;
+}
+
+.Textfield__input.is-error ~ .Textfield__bar:before,
+.Textfield__input.is-error ~ .Textfield__bar:after,
+.Textfield__textarea.is-error ~ .Textfield__bar:before,
+.Textfield__textarea.is-error ~ .Textfield__bar:after {
+  width: 50%;
+  background: $red;
+}
+
+.Textfield__input.is-error ~ .Textfield__label,
+.Textfield__textarea.is-error ~ .Textfield__label {
+  color: $red;
+}
